@@ -13,3 +13,6 @@
 [submodule ".vim/pack/benjavim/start/commentary"]
 	path = .vim/pack/benjavim/start/commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule ".vim/pack/benjavim/start/abolish"]
+	path = .vim/pack/benjavim/start/abolish
+	url = https://github.com/tpope/vim-abolish.git
