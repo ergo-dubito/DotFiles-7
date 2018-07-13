@@ -1,0 +1,6 @@
+[submodule ".vim/pack/benjavim/start/sensible"]
+	path = .vim/pack/benjavim/start/sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule ".vim/pack/benjavim/start/solarized"]
+	path = .vim/pack/benjavim/start/solarized
+	url = https://github.com/deybhayden/vim-colors-solarized.git

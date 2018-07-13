@@ -42,6 +42,7 @@ alias eb='vim "$HOME/.bashrc"'
 alias ev='vim "$HOME/.vimrc"'
 alias src='source "$HOME/.bash_profile"'
 alias .f='cd "$REPOS_DIR/DotFiles/"'
+alias .v='cd "$REPOS_DIR/DotFiles/.vim/"'
 alias rep='cd "$REPOS_DIR/"'
 alias ..="cd .."
 alias ls="ls --color=tty"
