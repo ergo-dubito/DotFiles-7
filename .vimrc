@@ -30,6 +30,10 @@ set smartcase
 set hidden
 " No bells
 set noerrorbells visualbell t_vb=
+" Customize wild ignore to speed up searches
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
+set wildignore+=*.pdf,*.psd
+set wildignore+=node_modules/*
 
 " Leader mappings
 let g:mapleader = ","
@@ -39,6 +43,9 @@ nnoremap <leader>w :w<cr>
 nnoremap <leader>q :qa!<cr>
 nnoremap <leader>, :Commentary<cr>
 vnoremap <leader>, :Commentary<cr>
+nnoremap <leader>f :e **/*
+nnoremap <leader>v :vsplit **/*
+nnoremap <leader>r :Rg<space>
 
 " Space mappings
 nnoremap <space><tab> :b#<cr>
@@ -47,5 +54,9 @@ nnoremap <space>w/ :vsplit<cr>
 nnoremap <space>w- :split<cr>
 nnoremap <space>s :S/
 vnoremap <space>s :S/
+
+" Other mappings
+" `gf` opens file under cursor in a new vertical split
+nnoremap gf :vertical wincmd f<CR>
 
 " vim:set ft=vim et sw=2:

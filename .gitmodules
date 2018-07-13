@@ -19,3 +19,6 @@
 [submodule ".vim/pack/benjavim/start/lightline"]
 	path = .vim/pack/benjavim/start/lightline
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule ".vim/pack/benjavim/start/ripgrep"]
+	path = .vim/pack/benjavim/start/ripgrep
+	url = https://github.com/jremmen/vim-ripgrep.git
