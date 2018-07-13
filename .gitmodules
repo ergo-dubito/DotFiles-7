@@ -22,3 +22,6 @@
 [submodule ".vim/pack/benjavim/start/ripgrep"]
 	path = .vim/pack/benjavim/start/ripgrep
 	url = https://github.com/jremmen/vim-ripgrep.git
+[submodule ".vim/pack/benjavim/start/rhubarb"]
+	path = .vim/pack/benjavim/start/rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git

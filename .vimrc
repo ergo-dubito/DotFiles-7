@@ -37,21 +37,29 @@ set wildignore+=node_modules/*
 
 " Leader mappings
 let g:mapleader = ","
+" General
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :qa!<cr>
+" Commentary
 nnoremap <leader>, :Commentary<cr>
 vnoremap <leader>, :Commentary<cr>
+" File searching
 nnoremap <leader>f :e **/*
 nnoremap <leader>v :vsplit **/*
 nnoremap <leader>r :Rg<space>
+" Fugitive
+nnoremap <leader>gl :Gbrowse!<cr>
+vnoremap <leader>gl :Gbrowse!<cr>
 
 " Space mappings
 nnoremap <space><tab> :b#<cr>
+" Windows
 nnoremap <space>w <C-w>
 nnoremap <space>w/ :vsplit<cr>
 nnoremap <space>w- :split<cr>
+" Abolish
 nnoremap <space>s :S/
 vnoremap <space>s :S/
 
