@@ -40,6 +40,8 @@ set wildignore+=*.pdf,*.psd
 set wildignore+=node_modules/*,.git/*
 " Mouse is okay
 set mouse=a
+" Share GUI clipboard
+set clipboard=unnamed
 
 " Leader mappings
 let g:mapleader = ","
