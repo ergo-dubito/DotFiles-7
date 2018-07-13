@@ -16,11 +16,15 @@ else
   let &t_EI = "\e[1 q"
   let &t_te = "\e[0 q"
 endif
+" Set vertical split chars
+set fillchars+=vert:\ 
 " Configure status line
 let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ }
 
+" Temporary files
+set dir=/tmp/
 " Highlight while searching
 set hlsearch
 set incsearch
@@ -33,7 +37,7 @@ set noerrorbells visualbell t_vb=
 " Customize wild ignore to speed up searches
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
 set wildignore+=*.pdf,*.psd
-set wildignore+=node_modules/*
+set wildignore+=node_modules/*,.git/*
 " Mouse is okay
 set mouse=a
 
@@ -41,6 +45,7 @@ set mouse=a
 let g:mapleader = ","
 " General
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>eb :vsplit $HOME/.bashrc<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :qa!<cr>
@@ -48,9 +53,9 @@ nnoremap <leader>q :qa!<cr>
 nnoremap <leader>, :Commentary<cr>
 vnoremap <leader>, :Commentary<cr>
 " File searching
-nnoremap <leader>f :e **/*
+nnoremap <leader>f :e<space>
 nnoremap <leader>F :vsplit .<cr>
-nnoremap <leader>v :vsplit **/*
+nnoremap <leader>v :vsplit<space>
 nnoremap <leader>r :Rg<space>
 nnoremap <leader>u :MRU<cr>
 " Fugitive

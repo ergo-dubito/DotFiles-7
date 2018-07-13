@@ -53,11 +53,11 @@ alias pyserve="python -m http.server"
 
 # Find utilities
 ff() {
-  find . -type f -iname "*$1*"
+  find . -type f -iname "*$1*" ! -path "./.git/*"
 }
 
 ef() {
-  find . -type f -iname "$1" -exec vim {} \;
+  find . -type f -iname "$1" -path .git -exec vim {} \;
 }
 
 # Git utilities
