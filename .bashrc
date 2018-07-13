@@ -51,6 +51,15 @@ alias cO="curl -L -O"
 alias randstr="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1"
 alias pyserve="python -m http.server"
 
+# Find utilities
+ff() {
+  find . -type f -iname "*$1*"
+}
+
+ef() {
+  find . -type f -iname "$1" -exec vim {} \;
+}
+
 # Git utilities
 alias g="git"
 complete -o bashdefault -o default -o nospace -F _git g
