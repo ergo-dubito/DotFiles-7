@@ -1,0 +1,10 @@
+set clipboard=unnamed
+set ignorecase
+set surround
+set scroll
+let mapleader = ","
+" Write U
+nnoremap <Leader>w :w<cr>
+nnoremap <Space><Tab> :action RecentFiles<cr>
+nnoremap <Leader>, :action CommentByLineComment<cr>
+vnoremap <Leader>, :action CommentByLineComment<cr>

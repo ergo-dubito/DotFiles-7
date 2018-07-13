@@ -1,0 +1,2 @@
+# Set up keyboard mappings & autostart programs
+@sh -c "$HOME/.local/bin/xinit.sh"

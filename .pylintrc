@@ -1,0 +1,7 @@
+[MASTER]
+
+load-plugins=pylint.extensions.docparams
+
+[MESSAGES CONTROL]
+
+disable=invalid-name,line-too-long
