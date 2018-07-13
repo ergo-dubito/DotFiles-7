@@ -4,3 +4,12 @@
 [submodule ".vim/pack/benjavim/start/solarized"]
 	path = .vim/pack/benjavim/start/solarized
 	url = https://github.com/deybhayden/vim-colors-solarized.git
+[submodule ".vim/pack/benjavim/start/surround"]
+	path = .vim/pack/benjavim/start/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/pack/benjavim/start/fugitive"]
+	path = .vim/pack/benjavim/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/pack/benjavim/start/commentary"]
+	path = .vim/pack/benjavim/start/commentary
+	url = https://github.com/tpope/vim-commentary.git
