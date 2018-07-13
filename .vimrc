@@ -34,6 +34,8 @@ set noerrorbells visualbell t_vb=
 set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
 set wildignore+=*.pdf,*.psd
 set wildignore+=node_modules/*
+" Mouse is okay
+set mouse=a
 
 " Leader mappings
 let g:mapleader = ","
@@ -47,8 +49,10 @@ nnoremap <leader>, :Commentary<cr>
 vnoremap <leader>, :Commentary<cr>
 " File searching
 nnoremap <leader>f :e **/*
+nnoremap <leader>F :vsplit .<cr>
 nnoremap <leader>v :vsplit **/*
 nnoremap <leader>r :Rg<space>
+nnoremap <leader>u :MRU<cr>
 " Fugitive
 nnoremap <leader>gl :Gbrowse!<cr>
 vnoremap <leader>gl :Gbrowse!<cr>
