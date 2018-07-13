@@ -34,47 +34,55 @@ set smartcase
 set hidden
 " No bells
 set noerrorbells visualbell t_vb=
-" Customize wild ignore to speed up searches
-set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
-set wildignore+=*.pdf,*.psd
-set wildignore+=node_modules/*,.git/*
 " Mouse is okay
 set mouse=a
 " Share GUI clipboard
 set clipboard=unnamed
+" Set up fzf
+if has('macunix')
+  set rtp+=/usr/local/opt/fzf
+endif
 
 " Leader mappings
 let g:mapleader = ","
+
 " General
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>eb :vsplit $HOME/.bashrc<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :qa!<cr>
+
+" Buffers
+nnoremap <space><tab> :b#<cr>
+nnoremap <leader>b :Buffers<cr>
+
 " Commentary
 nnoremap <leader>, :Commentary<cr>
 vnoremap <leader>, :Commentary<cr>
+
 " File searching
-nnoremap <leader>f :e<space>
+nnoremap <leader>f :FZF<cr>
 nnoremap <leader>F :vsplit .<cr>
 nnoremap <leader>v :vsplit<space>
 nnoremap <leader>r :Rg<space>
-nnoremap <leader>u :MRU<cr>
+nnoremap <leader>u :History<cr>
+
 " Fugitive
 nnoremap <leader>gl :Gbrowse!<cr>
 vnoremap <leader>gl :Gbrowse!<cr>
 
-" Space mappings
-nnoremap <space><tab> :b#<cr>
 " Windows
 nnoremap <space>w <C-w>
 nnoremap <space>w/ :vsplit<cr>
 nnoremap <space>w- :split<cr>
+
 " Abolish
 nnoremap <space>s :S/
 vnoremap <space>s :S/
 
 " Other mappings
+
 " `gf` opens file under cursor in a new vertical split
 nnoremap gf :vertical wincmd f<CR>
 

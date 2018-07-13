@@ -20,7 +20,7 @@ if [[ ! $(brew --version) ]]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   echo "Installing brew packages"
-  brew install awscli awsebcli coreutils ctags bash bash-completion git gnutls gpg httpie openssl stow jq ffmpeg clojure leiningen mysql postgres imagemagick pandoc pssh pyenv pyenv-virtualenv ripgrep nodejs packer terraform youtube-dl hunspell vim z
+  brew install awscli awsebcli coreutils ctags bash bash-completion fzf git gnutls gpg httpie openssl stow jq ffmpeg clojure leiningen mysql postgres imagemagick pandoc pssh pyenv pyenv-virtualenv ripgrep nodejs packer terraform youtube-dl hunspell vim z
 
   brew install gnu-sed --with-default-names
   brew install findutils --with-default-names
@@ -70,4 +70,4 @@ fi
 
 unset $PYENV_VERSION
 
-" vim:set ft=sh et sw=2:
+# vim:set ft=sh et sw=2:

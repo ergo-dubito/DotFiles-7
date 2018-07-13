@@ -51,14 +51,15 @@ alias cO="curl -L -O"
 alias randstr="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1"
 alias pyserve="python -m http.server"
 
-# Find utilities
-ff() {
-  find . -type f -iname "*$1*" ! -path "./.git/*"
-}
-
-ef() {
-  find . -type f -iname "$1" -path .git -exec vim {} \;
-}
+# fzf configuration
+# Solarized colors
+export FZF_DEFAULT_OPTS='
+  --color=bg+:#073642,bg:#002b36,spinner:#719e07,hl:#586e75
+  --color=fg:#839496,header:#586e75,info:#cb4b16,pointer:#719e07
+  --color=marker:#719e07,fg+:#839496,prompt:#719e07,hl+:#719e07
+'
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+bind -x '"\ep": vim $(fzf --height 40% --reverse);'
 
 # Git utilities
 alias g="git"

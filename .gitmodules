@@ -25,6 +25,9 @@
 [submodule ".vim/pack/benjavim/start/rhubarb"]
 	path = .vim/pack/benjavim/start/rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
-[submodule ".vim/pack/benjavim/start/mru"]
-	path = .vim/pack/benjavim/start/mru
-	url = https://github.com/vim-scripts/mru.vim.git
+[submodule ".vim/pack/benjavim/start/fzf"]
+	path = .vim/pack/benjavim/start/fzf
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule ".vim/pack/benjavim/start/unimpaired"]
+	path = .vim/pack/benjavim/start/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git

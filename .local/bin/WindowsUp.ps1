@@ -18,5 +18,5 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 # Install software packages
 Invoke-RestMethod https://chocolatey.org/install.ps1 | Invoke-Expression
 Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
-choco install -y git nodejs.install ripgrep autohotkey.install googlechrome slack hunspell.portable ccleaner ditto sql-server-management-studio python3
+choco install -y git nodejs.install ripgrep autohotkey.install googlechrome slack hunspell.portable ccleaner ditto sql-server-management-studio python3 fzf
 Update-SessionEnvironment
