@@ -16,8 +16,13 @@ else
   let &t_EI = "\e[1 q"
   let &t_te = "\e[0 q"
 endif
+" Configure status line
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
 
 " Highlight while searching
+set hlsearch
 set incsearch
 " Be smart about case senstive searches
 set smartcase
@@ -38,6 +43,8 @@ vnoremap <leader>, :Commentary<cr>
 " Space mappings
 nnoremap <space><tab> :b#<cr>
 nnoremap <space>w <C-w>
+nnoremap <space>w/ :vsplit<cr>
+nnoremap <space>w- :split<cr>
 nnoremap <space>s :S/
 vnoremap <space>s :S/
 

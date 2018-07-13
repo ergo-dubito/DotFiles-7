@@ -16,3 +16,6 @@
 [submodule ".vim/pack/benjavim/start/abolish"]
 	path = .vim/pack/benjavim/start/abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule ".vim/pack/benjavim/start/lightline"]
+	path = .vim/pack/benjavim/start/lightline
+	url = https://github.com/itchyny/lightline.vim.git
