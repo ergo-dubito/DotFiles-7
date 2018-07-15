@@ -46,7 +46,7 @@ if [[ ! $(brew --version) ]]; then
   pyenv global 3.6.5
 
   echo "Installing global pips"
-  pip install ipython pylint yapf
+  pip install ipython pylint yapf vim-vint
 
   echo "Installing global npms"
   npm install -g prettier tern

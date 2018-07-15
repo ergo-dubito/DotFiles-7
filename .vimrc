@@ -27,7 +27,7 @@ let g:lightline = {
       \ }
 
 " Temporary files
-set dir=/tmp/
+set directory=/tmp/
 " Highlight while searching
 set hlsearch
 set incsearch
@@ -43,8 +43,10 @@ set mouse=a
 set clipboard=unnamed
 " Set up fzf
 if has('macunix')
-  set rtp+=/usr/local/opt/fzf
+  set runtimepath+=/usr/local/opt/fzf
   let g:fzf_history_dir = '~/.local/share/fzf-history'
+else
+  set runtimepath+=~/.fzf
 endif
 
 " Leader mappings
@@ -59,6 +61,14 @@ nnoremap <leader>q :qa!<cr>
 nnoremap <leader>Q :wqa<cr>
 nnoremap <leader>h :Helptags<cr>
 nnoremap <leader>H :helptags ALL<cr>
+
+" Neomake
+augroup neomake_grp
+  autocmd VimEnter * call neomake#configure#automake('rw', 1000)
+augroup END
+nnoremap <leader>m :Neomake<cr>
+nnoremap <leader>l :lopen<cr>
+nnoremap <leader>L :lclose<cr>
 
 " Buffers
 nnoremap <space><tab> :b#<cr>
