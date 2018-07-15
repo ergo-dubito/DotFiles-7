@@ -56,6 +56,7 @@ nnoremap <leader>q :qa!<cr>
 " Buffers
 nnoremap <space><tab> :b#<cr>
 nnoremap <leader>b :Buffers<cr>
+nnoremap <leader>d :bd<cr>
 
 " Commentary
 nnoremap <leader>, :Commentary<cr>
@@ -67,6 +68,7 @@ nnoremap <leader>F :vsplit .<cr>
 nnoremap <leader>v :vsplit<space>
 nnoremap <leader>r :Rg<space>
 nnoremap <leader>u :History<cr>
+nnoremap <leader>t :Tags<cr>
 
 " Fugitive
 nnoremap <leader>gl :Gbrowse!<cr>
