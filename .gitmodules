@@ -43,3 +43,6 @@
 [submodule ".vim/pack/benjavim/start/neomake"]
 	path = .vim/pack/benjavim/start/neomake
 	url = https://github.com/neomake/neomake.git
+[submodule ".vim/pack/benjavim/start/gitgutter"]
+	path = .vim/pack/benjavim/start/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git

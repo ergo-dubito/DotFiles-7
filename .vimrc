@@ -32,6 +32,8 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head'
       \ },
       \ }
+" Tell GitGutter not to change column colors
+let g:gitgutter_override_sign_column_highlight = 0
 
 " Temporary files
 set directory=/tmp/
@@ -57,7 +59,7 @@ else
 endif
 
 " Leader mappings
-let g:mapleader = ","
+let g:mapleader = ','
 
 " General
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -66,8 +68,8 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :qa!<cr>
 nnoremap <leader>Q :wqa<cr>
-nnoremap <leader>h :Helptags<cr>
-nnoremap <leader>H :helptags ALL<cr>
+nnoremap <leader>? :Helptags<cr>
+nnoremap <leader>sh :helptags ALL<cr>
 
 " Neomake
 augroup neomake_grp
