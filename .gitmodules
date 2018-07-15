@@ -37,3 +37,6 @@
 [submodule ".vim/pack/benjavim/start/python-indent"]
 	path = .vim/pack/benjavim/start/python-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent.git
+[submodule ".vim/pack/benjavim/start/gnupg"]
+	path = .vim/pack/benjavim/start/gnupg
+	url = https://github.com/jamessan/vim-gnupg.git
