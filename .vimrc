@@ -16,6 +16,9 @@ else
   let &t_EI = "\e[1 q"
   let &t_te = "\e[0 q"
 endif
+" Italic comments
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
 " Set vertical split chars
 set fillchars+=vert:\ 
 " Configure status line
