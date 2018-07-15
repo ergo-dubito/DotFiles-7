@@ -31,3 +31,6 @@
 [submodule ".vim/pack/benjavim/start/unimpaired"]
 	path = .vim/pack/benjavim/start/unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule ".vim/pack/benjavim/start/elixir"]
+	path = .vim/pack/benjavim/start/elixir
+	url = https://github.com/elixir-editors/vim-elixir.git
