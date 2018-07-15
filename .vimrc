@@ -52,6 +52,8 @@ nnoremap <leader>eb :vsplit $HOME/.bashrc<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :qa!<cr>
+nnoremap <leader>h :Helptags<cr>
+nnoremap <leader>H :helptags ALL<cr>
 
 " Buffers
 nnoremap <space><tab> :b#<cr>
