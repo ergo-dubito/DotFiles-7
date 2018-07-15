@@ -41,6 +41,7 @@ set clipboard=unnamed
 " Set up fzf
 if has('macunix')
   set rtp+=/usr/local/opt/fzf
+  let g:fzf_history_dir = '~/.local/share/fzf-history'
 endif
 
 " Leader mappings
