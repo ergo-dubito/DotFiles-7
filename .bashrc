@@ -52,6 +52,7 @@ alias randstr="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1"
 alias pyserve="python -m http.server"
 
 # fzf configuration
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --color=never'
 # Solarized colors
 export FZF_DEFAULT_OPTS='
   --color=bg+:#073642,bg:#002b36,spinner:#719e07,hl:#586e75
