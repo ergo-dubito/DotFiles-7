@@ -2,7 +2,7 @@
 
 # Set PS1
 _git_dirty() {
-  [[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]] && echo "*"
+  git diff --quiet --ignore-submodules HEAD || echo '*'
 }
 
 _git_prompt() {
