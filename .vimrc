@@ -90,8 +90,7 @@ vnoremap <leader>, :Commentary<cr>
 
 " File searching
 nnoremap <leader>f :FZF<cr>
-nnoremap <leader>F :vsplit .<cr>
-nnoremap <leader>v :vsplit<space>
+nnoremap <leader>F :FZF<space>
 nnoremap <leader>r :Rg<space>
 nnoremap <leader>u :FZFMru<cr>
 nnoremap <leader>t :Tags<cr>
