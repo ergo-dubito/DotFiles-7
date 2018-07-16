@@ -2,7 +2,7 @@
 
 # Set PS1
 _git_dirty() {
-  git diff --quiet --ignore-submodules HEAD || echo '*'
+  [[ $(git status --porcelain 2> /dev/null) != "" ]] && echo '*'
 }
 
 _git_prompt() {
