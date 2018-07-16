@@ -93,7 +93,7 @@ nnoremap <leader>f :FZF<cr>
 nnoremap <leader>F :vsplit .<cr>
 nnoremap <leader>v :vsplit<space>
 nnoremap <leader>r :Rg<space>
-nnoremap <leader>u :History<cr>
+nnoremap <leader>u :FZFMru<cr>
 nnoremap <leader>t :Tags<cr>
 
 " Fugitive
