@@ -49,7 +49,7 @@ if [[ ! $(brew --version) ]]; then
   pip install ipython pylint yapf vim-vint
 
   echo "Installing global npms"
-  npm install -g prettier tern
+  npm install -g prettier tern jsonlint
 
   echo "Stowing files"
   stow -t ~ .
