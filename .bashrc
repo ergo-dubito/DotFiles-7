@@ -88,11 +88,10 @@ alias gd="git diff"
 __git_complete gd _git_diff
 alias gdc="git diff --cached"
 __git_complete gdc _git_diff
-alias gl="git pull --prune"
+alias gl="git pull"
 __git_complete gl _git_pull
 alias glg="git log --stat"
 alias glgp="git log --stat -p"
-alias gup="git pull --rebase --prune"
 alias gclean='git clean -fd'
 alias gr='git remote'
 __git_complete gr _git_remote
@@ -132,16 +131,14 @@ gsmash() {
   ggp
 }
 
-gup-repos() {
+gl-repos() {
   GREEN='\033[0;32m'
   NC='\033[0m' # No Color
   for d in $(ls "$REPOS_DIR"); do
     (
       printf "\n${GREEN}== $d ==${NC}\n"
       cd "$REPOS_DIR/$d"
-      gsta
-      gup
-      gstp
+      gl
     )
   done
 }
