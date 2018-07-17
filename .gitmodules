@@ -49,3 +49,6 @@
 [submodule ".vim/pack/benjavim/start/fzf-mru"]
 	path = .vim/pack/benjavim/start/fzf-mru
 	url = https://github.com/pbogut/fzf-mru.vim.git
+[submodule ".vim/pack/benjavim/start/rsi"]
+	path = .vim/pack/benjavim/start/rsi
+	url = https://github.com/tpope/vim-rsi.git
