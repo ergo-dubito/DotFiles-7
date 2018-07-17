@@ -50,6 +50,7 @@ alias l="ls -hal --color=tty"
 alias cO="curl -L -O"
 alias randstr="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1"
 alias pyserve="python -m http.server"
+alias tax="tmux attach-session"
 
 # fzf configuration
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --color=never'
