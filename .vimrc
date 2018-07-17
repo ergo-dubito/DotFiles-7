@@ -44,6 +44,7 @@ set directory=/tmp/
 set hlsearch
 set incsearch
 " Be smart about case senstive searches
+set ignorecase
 set smartcase
 " Switch buffers without saving
 set hidden
