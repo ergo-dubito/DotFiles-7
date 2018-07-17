@@ -101,9 +101,11 @@ nnoremap <leader>r :Rg<space>
 nnoremap <leader>u :FZFMru<cr>
 nnoremap <leader>t :Tags<cr>
 
-" Fugitive
+" Git
+nnoremap <leader>gg :GitGutter<cr>
 nnoremap <leader>gl :Gbrowse!<cr>
 vnoremap <leader>gl :Gbrowse!<cr>
+nnoremap <leader>gs :Gstatus<cr>
 
 " Windows
 nnoremap <space>w <C-w>
