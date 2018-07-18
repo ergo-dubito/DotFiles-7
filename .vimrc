@@ -116,5 +116,9 @@ vnoremap <space>s :S/
 
 " `gf` opens file under cursor in a new vertical split
 nnoremap gf :vertical wincmd f<CR>
+" `gx` opens URL in web browser
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <Plug>(openbrowser-smart-search)
 
 " vim:set ft=vim et sw=2:

@@ -52,3 +52,6 @@
 [submodule ".vim/pack/benjavim/start/rsi"]
 	path = .vim/pack/benjavim/start/rsi
 	url = https://github.com/tpope/vim-rsi.git
+[submodule ".vim/pack/benjavim/start/open-browser"]
+	path = .vim/pack/benjavim/start/open-browser
+	url = https://github.com/tyru/open-browser.vim.git
