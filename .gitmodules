@@ -55,3 +55,6 @@
 [submodule ".vim/pack/benjavim/start/open-browser"]
 	path = .vim/pack/benjavim/start/open-browser
 	url = https://github.com/tyru/open-browser.vim.git
+[submodule ".vim/pack/benjavim/start/mix-format"]
+	path = .vim/pack/benjavim/start/mix-format
+	url = https://github.com/mhinz/vim-mix-format.git
