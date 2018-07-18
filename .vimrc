@@ -94,6 +94,11 @@ nnoremap <leader>t :Tags<cr>
 
 " Git
 nnoremap <leader>gg :GitGutter<cr>
+nnoremap <leader>gw :Gwrite<cr>
+nnoremap <leader>gc :Gcommit<cr>
+nnoremap <leader>gp :Gpush<cr>
+nnoremap <leader>gb :Gblame!<cr>
+vnoremap <leader>gb :Gblame!<cr>
 nnoremap <leader>gl :Gbrowse!<cr>
 vnoremap <leader>gl :Gbrowse!<cr>
 nnoremap <leader>gs :Gstatus<cr>
