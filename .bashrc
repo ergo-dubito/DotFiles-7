@@ -177,4 +177,7 @@ if [[ -f $HOME/.bash_aliases ]] ; then
   . "$HOME/.bash_aliases"
 fi
 
+# Clear last status
+true
+
 # vim:set ft=sh et sw=2:
