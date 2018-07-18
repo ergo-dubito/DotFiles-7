@@ -44,7 +44,7 @@ set noerrorbells visualbell t_vb=
 " Mouse is okay
 set mouse=a
 " Share GUI clipboard
-set clipboard=unnamed
+set clipboard^=unnamedplus,unnamed
 " Set up fzf
 if has('macunix')
   set runtimepath+=/usr/local/opt/fzf
