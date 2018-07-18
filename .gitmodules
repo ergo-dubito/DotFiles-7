@@ -58,3 +58,6 @@
 [submodule ".vim/pack/benjavim/start/mix-format"]
 	path = .vim/pack/benjavim/start/mix-format
 	url = https://github.com/mhinz/vim-mix-format.git
+[submodule ".vim/pack/benjavim/start/golang"]
+	path = .vim/pack/benjavim/start/golang
+	url = https://github.com/fatih/vim-go.git
