@@ -61,3 +61,6 @@
 [submodule ".vim/pack/benjavim/start/golang"]
 	path = .vim/pack/benjavim/start/golang
 	url = https://github.com/fatih/vim-go.git
+[submodule ".vim/pack/benjavim/start/auto-pairs"]
+	path = .vim/pack/benjavim/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git

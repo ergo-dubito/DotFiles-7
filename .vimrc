@@ -110,7 +110,7 @@ nnoremap <space>w/ :vsplit<cr>
 nnoremap <space>w- :split<cr>
 
 " Abolish
-nnoremap <space>s :S/
+nnoremap <space>s V:S/
 vnoremap <space>s :S/
 
 " Other mappings
