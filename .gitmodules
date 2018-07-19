@@ -64,3 +64,6 @@
 [submodule ".vim/pack/benjavim/start/auto-pairs"]
 	path = .vim/pack/benjavim/start/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule ".vim/pack/benjavim/start/endwise"]
+	path = .vim/pack/benjavim/start/endwise
+	url = https://github.com/tpope/vim-endwise.git
