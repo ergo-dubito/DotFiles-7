@@ -54,6 +54,10 @@ alias randstr="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1"
 alias pyserve="python -m http.server"
 alias tax="tmux attach-session"
 
+if [[ $TMUX ]]; then
+  alias ssh="TERM=screen-256color ssh"
+fi
+
 # ipython
 alias ip="ipython"
 alias pylab="ipython --pylab"
