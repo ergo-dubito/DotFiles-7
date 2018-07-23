@@ -67,3 +67,6 @@
 [submodule ".vim/pack/benjavim/start/endwise"]
 	path = .vim/pack/benjavim/start/endwise
 	url = https://github.com/tpope/vim-endwise.git
+[submodule ".vim/pack/benjavim/start/prettier"]
+	path = .vim/pack/benjavim/start/prettier
+	url = https://github.com/prettier/vim-prettier.git

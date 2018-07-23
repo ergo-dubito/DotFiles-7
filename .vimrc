@@ -70,12 +70,18 @@ nnoremap <leader>? :Helptags<cr>
 nnoremap <leader>sh :helptags ALL<cr>
 
 " Neomake
-augroup neomake_grp
+augroup neomake_group
   autocmd VimEnter * call neomake#configure#automake('rw', 1000)
 augroup END
 nnoremap <leader>m :Neomake<cr>
 nnoremap <leader>l :lopen<cr>
 nnoremap <leader>L :lclose<cr>
+
+" Prettier
+augroup prettier_group
+  let g:prettier#autoformat = 0
+  autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+augroup END
 
 " Buffers
 nnoremap <space><tab> :b#<cr>
