@@ -38,7 +38,7 @@ eval `dircolors "$HOME/.dircolors"`
 
 export EDITOR='vim'
 alias e='vim'
-alias eb='vim "$HOME/.bashrc"'
+alias es='vim "$HOME/.bashrc"'
 alias ev='vim "$HOME/.vimrc"'
 alias ea='vim "$HOME"/.bash_aliases'
 alias ep='vim "$HOME"/.bash_profile'
@@ -85,6 +85,7 @@ __git_complete gca _git_commit
 alias gc!="git commit -v --amend"
 alias gca!="git commit -v -a --amend"
 alias gcan!="git commit -v -a --no-edit --amend"
+alias gcf="git commit --fixup="
 alias gco="git checkout"
 __git_complete gco _git_checkout
 alias gcl="git clone"
