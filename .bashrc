@@ -30,6 +30,18 @@ elif [ -f /usr/share/bash-completion/bash_completion ]; then
   command -v __git_complete > /dev/null || . /usr/share/bash-completion/completions/git
 fi
 
+# Eternal Bash History
+## No dupes
+export HISTCONTROL=ignoreboth:erasedups
+## Undocumented feature which sets the size to "unlimited".
+export HISTFILESIZE=
+export HISTSIZE=
+export HISTTIMEFORMAT="%F %T "
+## Change the file location because certain bash sessions truncate .bash_history file upon close.
+export HISTFILE=~/.bash_eternal_history
+## Force prompt to write history after every command.
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
 # Load dircolors
 eval `dircolors "$HOME/.dircolors"`
 
