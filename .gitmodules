@@ -76,3 +76,6 @@
 [submodule ".vim/pack/benjavim/start/jsx"]
 	path = .vim/pack/benjavim/start/jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule ".vim/pack/benjavim/start/lessspace"]
+	path = .vim/pack/benjavim/start/lessspace
+	url = https://github.com/thirtythreeforty/lessspace.vim.git
