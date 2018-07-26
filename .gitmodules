@@ -70,3 +70,9 @@
 [submodule ".vim/pack/benjavim/start/prettier"]
 	path = .vim/pack/benjavim/start/prettier
 	url = https://github.com/prettier/vim-prettier.git
+[submodule ".vim/pack/benjavim/start/javascript"]
+	path = .vim/pack/benjavim/start/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/pack/benjavim/start/jsx"]
+	path = .vim/pack/benjavim/start/jsx
+	url = https://github.com/mxw/vim-jsx.git
