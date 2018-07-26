@@ -28,6 +28,8 @@ let g:lightline = {
       \ }
 " Tell GitGutter not to change column colors
 let g:gitgutter_override_sign_column_highlight = 0
+" Tell Prettier not to autoformat
+let g:prettier#autoformat = 0
 
 " Temporary files
 set directory=/tmp/
@@ -70,18 +72,9 @@ nnoremap <leader>? :Helptags<cr>
 nnoremap <leader>sh :helptags ALL<cr>
 
 " Neomake
-augroup neomake_group
-  autocmd VimEnter * call neomake#configure#automake('rw', 1000)
-augroup END
 nnoremap <leader>m :Neomake<cr>
 nnoremap <leader>l :lopen<cr>
 nnoremap <leader>L :lclose<cr>
-
-" Prettier
-augroup prettier_group
-  let g:prettier#autoformat = 0
-  autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
-augroup END
 
 " Buffers
 nnoremap <space><tab> :b#<cr>
@@ -118,6 +111,13 @@ nnoremap <space>w- :split<cr>
 " Abolish
 nnoremap <space>s V:S/
 vnoremap <space>s :S/
+
+" Buf(Read|Write) Auto Commands
+augroup vimrc_group
+  autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+  autocmd BufWritePost * GitGutter
+  autocmd BufReadPost * call neomake#configure#automake('rw', 1000)
+augroup END
 
 " Other mappings
 
