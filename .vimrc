@@ -63,6 +63,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>eb :vsplit $HOME/.bashrc<cr>
 nnoremap <leader>ef :e<space>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>sp :set spell!<cr>
 nnoremap <leader>a ggVGy`'
 nnoremap <leader>p ggVGp
 nnoremap <leader>w :w<cr>

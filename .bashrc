@@ -128,6 +128,8 @@ alias grbs='git rebase --skip'
 alias grh='git reset HEAD'
 alias gsta='git stash'
 alias gstp='git stash pop'
+alias gg='git grep'
+__git_complete gg _git_grep
 
 gbd() {
   prefix="origin/"

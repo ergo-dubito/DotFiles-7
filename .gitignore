@@ -6,3 +6,4 @@
 !.local/bin/ubentu.sh
 !.local/bin/battery
 .vim/.netrwhist
+.vim/spell
