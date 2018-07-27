@@ -117,6 +117,7 @@ vnoremap <space>s :S/
 " Buf(Read|Write) Auto Commands
 augroup vimrc_group
   autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
+  autocmd BufWritePre *.py Black
   autocmd BufWritePost * GitGutter
   autocmd BufReadPost * call neomake#configure#automake('rw', 1000)
 augroup END

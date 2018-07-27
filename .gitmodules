@@ -79,3 +79,6 @@
 [submodule ".vim/pack/benjavim/start/lessspace"]
 	path = .vim/pack/benjavim/start/lessspace
 	url = https://github.com/thirtythreeforty/lessspace.vim.git
+[submodule ".vim/pack/benjavim/start/python-black"]
+	path = .vim/pack/benjavim/start/python-black
+	url = https://github.com/ambv/black.git

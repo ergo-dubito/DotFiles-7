@@ -7,3 +7,4 @@
 !.local/bin/battery
 .vim/.netrwhist
 .vim/spell
+.vim/black
