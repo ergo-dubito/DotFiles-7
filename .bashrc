@@ -92,8 +92,6 @@ complete -o bashdefault -o default -o nospace -F _git g
 alias gst="git status"
 alias gc="git commit -v"
 __git_complete gc _git_commit
-alias gca="git commit -a"
-__git_complete gca _git_commit
 alias gc!="git commit -v --amend"
 alias gca!="git commit -v -a --amend"
 alias gcan!="git commit -v -a --no-edit --amend"
@@ -130,6 +128,11 @@ alias gsta='git stash'
 alias gstp='git stash pop'
 alias gg='git grep'
 __git_complete gg _git_grep
+
+gca() {
+  git add -A
+  git commit -m "$1"
+}
 
 gbd() {
   prefix="origin/"
