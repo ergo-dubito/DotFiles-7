@@ -65,6 +65,7 @@ nnoremap <leader>ef :e<space>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>sp :set spell!<cr>
 nnoremap <leader>sn :set number! cursorline!<cr>
+nnoremap <leader>sw :set wrap!<cr>
 nnoremap <leader>a ggVGy`'
 nnoremap <leader>p ggVGp
 nnoremap <leader>w :w<cr>
