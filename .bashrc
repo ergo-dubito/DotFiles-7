@@ -156,7 +156,8 @@ ggp() {
 }
 
 gsmash() {
-  git commit -v -a --no-edit --amend
+  git add -A
+  git commit -v --no-edit --amend
   ggp
 }
 
