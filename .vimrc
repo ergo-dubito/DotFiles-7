@@ -93,8 +93,8 @@ nnoremap <leader>f :FZF<cr>
 nnoremap <leader>F :FZF<space>
 nnoremap <leader>r :Rg<space>
 nnoremap <leader>u :FZFMru<cr>
-nnoremap <leader>t :Tags<cr>
-nnoremap <leader>T :TagbarToggle<cr>
+nnoremap <leader>T :Tags<cr>
+nnoremap <leader>t :TagbarToggle<cr>
 
 " Git
 nnoremap <leader>gg :GitGutter<cr>
