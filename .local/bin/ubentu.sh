@@ -3,7 +3,7 @@
 if [[ ! $(git) ]]; then
   # all the basics
   sudo apt remove -y firefox
-  sudo apt install -y chromium-browser vim-gtk git tmux xcape redshift gnome-terminal parcellite
+  sudo apt install -y build-essential cmake curl chromium-browser vim-gtk git tmux xcape redshift gnome-terminal parcellite python3-venv
 
   # fzf
   git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
