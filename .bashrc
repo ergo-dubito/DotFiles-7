@@ -131,7 +131,7 @@ __git_complete gg _git_grep
 
 gca() {
   git add -A
-  git commit -m "$1"
+  git commit "$@"
 }
 
 gbd() {
