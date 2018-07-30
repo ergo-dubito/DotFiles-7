@@ -25,6 +25,7 @@ if [[ ! $(brew --version) ]]; then
   echo "Install vim"
   brew install vim --with-override-system-vi
 
+  echo "Install gnu-sed and findutils without 'g' prefix"
   brew install gnu-sed --with-default-names
   brew install findutils --with-default-names
   brew services start mysql
