@@ -82,3 +82,6 @@
 [submodule ".vim/pack/benjavim/start/python-black"]
 	path = .vim/pack/benjavim/start/python-black
 	url = https://github.com/ambv/black.git
+[submodule ".vim/pack/benjavim/start/tagbar"]
+	path = .vim/pack/benjavim/start/tagbar
+	url = https://github.com/majutsushi/tagbar.git
