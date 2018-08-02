@@ -57,6 +57,7 @@ endif
 
 " Leader mappings
 let g:mapleader = ','
+let g:maplocalleader = '\'
 
 " General
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
