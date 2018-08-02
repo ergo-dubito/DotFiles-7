@@ -88,3 +88,6 @@
 [submodule ".vim/pack/benjavim/start/repeat"]
 	path = .vim/pack/benjavim/start/repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule ".vim/pack/benjavim/start/powershell"]
+	path = .vim/pack/benjavim/start/powershell
+	url = https://github.com/PProvost/vim-ps1.git
