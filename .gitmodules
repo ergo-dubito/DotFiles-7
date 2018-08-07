@@ -94,3 +94,6 @@
 [submodule ".vim/pack/benjavim/start/visualstar"]
 	path = .vim/pack/benjavim/start/visualstar
 	url = https://github.com/bronson/vim-visual-star-search.git
+[submodule ".vim/pack/benjavim/start/nginx"]
+	path = .vim/pack/benjavim/start/nginx
+	url = https://github.com/chr4/nginx.vim.git
