@@ -91,3 +91,6 @@
 [submodule ".vim/pack/benjavim/start/powershell"]
 	path = .vim/pack/benjavim/start/powershell
 	url = https://github.com/PProvost/vim-ps1.git
+[submodule ".vim/pack/benjavim/start/visualstar"]
+	path = .vim/pack/benjavim/start/visualstar
+	url = https://github.com/bronson/vim-visual-star-search.git
