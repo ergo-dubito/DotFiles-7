@@ -67,7 +67,7 @@ else
   brew update
   brew upgrade
   brew prune
-  brew cleanup
+  brew cleanup -s
   brew doctor
   brew cask cleanup
 fi
