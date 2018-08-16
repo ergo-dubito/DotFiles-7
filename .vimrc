@@ -54,6 +54,11 @@ if has('macunix')
 else
   set runtimepath+=~/.fzf
 endif
+" Disable autopair keybindings
+let g:AutoPairsShortcutToggle = ''
+let g:AutoPairsShortcutFastWrap = ''
+let g:AutoPairsShortcutJump = ''
+let g:AutoPairsShortcutBackInsert = ''
 
 " Leader mappings
 let g:mapleader = ','
